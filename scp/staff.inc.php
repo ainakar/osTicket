@@ -112,6 +112,7 @@ if ($_POST  && !$ost->checkCSRFToken()) {
 
 //Add token to the header - used on ajax calls [DO NOT CHANGE THE NAME]
 $ost->addExtraHeader('<meta name="csrf_token" content="'.$ost->getCSRFToken().'" />');
+$ost->addExtraHeader('<link rel="stylesheet" href="'.ROOT_PATH.'scp/css/modern-scp.css" media="all">');
 
 // Load the navigation after the user in case some things are hidden
 require_once(INCLUDE_DIR.'class.nav.php');

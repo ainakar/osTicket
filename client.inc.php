@@ -76,6 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !$ost->checkCSRFToken()) {
 
 //Add token to the header - used on ajax calls [DO NOT CHANGE THE NAME]
 $ost->addExtraHeader('<meta name="csrf_token" content="'.$ost->getCSRFToken().'" />');
+$ost->addExtraHeader('<link rel="stylesheet" href="'.ROOT_PATH.'css/modern-client.css" media="screen">');
 
 /* Client specific defaults */
 define('PAGE_LIMIT', DEFAULT_PAGE_LIMIT);

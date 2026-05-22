@@ -1,0 +1,102 @@
+/**
+ * Modern staff login — visual overrides only.
+ */
+:root {
+  --login-primary: #2563eb;
+  --login-primary-hover: #1d4ed8;
+  --login-surface: rgba(255, 255, 255, 0.92);
+  --login-text: #1e293b;
+  --login-muted: #64748b;
+  --login-radius: 12px;
+  --login-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body,
+input {
+  font-family: var(--login-font);
+}
+
+#background-compat {
+  background-color: rgba(15, 23, 42, 0.45);
+}
+
+#loginBox {
+  border-radius: var(--login-radius);
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+#loginBox:after {
+  background-color: var(--login-surface);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: var(--login-radius);
+}
+
+h1 {
+  color: var(--login-text);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  color: #dc2626;
+  font-size: 0.875rem;
+}
+
+fieldset input {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  background: #fff;
+  font-size: 0.9375rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+fieldset input:focus {
+  border-color: var(--login-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--login-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+button[type="submit"],
+input[type="submit"],
+.primary.button {
+  background-color: var(--login-primary) !important;
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.12);
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  background-color: var(--login-primary-hover) !important;
+  color: #fff !important;
+}
+
+#poweredBy {
+  background-color: rgba(15, 23, 42, 0.5);
+  border-radius: 8px;
+  font-size: 0.75rem;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#company .content {
+  background-color: rgba(15, 23, 42, 0.5);
+  border-radius: 8px;
+}
+
+.external-auth-box {
+  border-color: #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
