@@ -33,6 +33,17 @@ input {
   border-radius: var(--login-radius);
 }
 
+#loginBox form {
+  width: 100%;
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+#loginBox fieldset {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   color: var(--login-text);
   font-weight: 600;
@@ -69,11 +80,23 @@ input[type="submit"],
 .primary.button {
   background-color: var(--login-primary) !important;
   color: #fff !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  line-height: 1;
   border-radius: 8px;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
+  margin-top: 0.25rem;
   font-size: 0.9375rem;
   font-weight: 600;
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.12);
+}
+
+input[type="submit"] i,
+button[type="submit"] i {
+  margin-right: 0.35rem;
 }
 
 button[type="submit"]:hover,
