@@ -355,6 +355,154 @@ table.list tbody tr:hover td {
   color: var(--ost-primary);
 }
 
+/* Client sign-in page layout (login.php wireframe) */
+.signin-page {
+  width: 100%;
+}
+
+.signin-panel {
+  background: var(--ost-bg);
+  border: 1px solid var(--ost-border);
+  border-radius: var(--ost-radius-sm);
+  padding: 1.5rem 1.75rem 1.75rem;
+  text-align: left;
+}
+
+.signin-panel h1 {
+  margin: 0 0 0.75rem;
+  text-align: left;
+}
+
+.signin-intro {
+  margin: 0 0 1.25rem;
+  color: var(--ost-text);
+  text-align: left;
+  line-height: 1.5;
+}
+
+.signin-page #clientLogin,
+.signin-page #clientLogin.signin-form {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: none !important;
+}
+
+.signin-page #clientLogin > div {
+  clear: none;
+  overflow: visible;
+  padding: 0;
+}
+
+.signin-field {
+  margin-bottom: 1rem;
+}
+
+.signin-field label {
+  display: block;
+  float: none;
+  width: auto;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  color: var(--ost-text);
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.signin-field input {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 420px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.signin-actions {
+  text-align: left;
+  margin-top: 0.25rem;
+}
+
+.signin-page #clientLogin p.signin-actions,
+.signin-actions {
+  clear: none;
+  text-align: left;
+}
+
+.signin-actions .btn,
+.signin-actions input[type="submit"] {
+  display: inline-block;
+  width: auto;
+  min-width: 7rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--ost-text);
+  background: var(--ost-surface);
+  border: 1px solid var(--ost-border);
+  border-radius: var(--ost-radius-sm);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+  cursor: pointer;
+}
+
+.signin-actions .btn:hover,
+.signin-actions input[type="submit"]:hover {
+  background: #f8fafc;
+  border-color: var(--ost-muted);
+}
+
+.signin-forgot {
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 0.875rem;
+  vertical-align: middle;
+}
+
+.signin-error strong {
+  display: block;
+  padding: 0;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: var(--ost-error);
+}
+
+.signin-page #clientLogin strong {
+  padding-left: 0;
+}
+
+.signin-secondary {
+  margin-top: 1.25rem;
+  text-align: left;
+}
+
+.signin-divider {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid var(--ost-border);
+  width: 70%;
+}
+
+.signin-register,
+.signin-agent {
+  margin: 1rem 0 0;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.signin-panel-note {
+  margin: 1.5rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ost-border);
+  font-size: 0.9375rem;
+  color: var(--ost-text);
+  text-align: left;
+  line-height: 1.5;
+}
+
 @media (max-width: 640px) {
   #container {
     margin: 0.5rem auto 1rem;
@@ -375,5 +523,14 @@ table.list tbody tr:hover td {
   #nav li a {
     padding: 0.4rem 0.75rem !important;
     font-size: 0.8125rem;
+  }
+
+  .signin-field input {
+    max-width: 100%;
+  }
+
+  .signin-forgot {
+    display: block;
+    margin: 0.75rem 0 0;
   }
 }
